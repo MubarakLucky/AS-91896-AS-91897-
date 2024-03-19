@@ -1,0 +1,25 @@
+# main routine starts here
+
+# ser maximum number of tickets below
+MAX_TICKETS = 3
+
+# loop to sell tickets
+tickets_sold = 0
+while tickets_sold < MAX_TICKETS:
+    name = input("Please enter yout name or 'xxx' to quit: ")
+
+
+    if name == 'xxx':
+        break
+
+
+
+    tickets_sold += 1
+
+
+# Output number of tickets sold
+if tickets_sold == MAX_TICKETS:
+    print("Congratulation you have sold all the tickets")
+else:
+    print("You jave sold {} ticket/s. There is {} ticket/s"
+          "remanining").__format__(tickets_sold, MAX_TICKETS - tickets_sold)
