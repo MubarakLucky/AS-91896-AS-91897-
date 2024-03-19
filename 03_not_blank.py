@@ -17,6 +17,7 @@ def not_blank(question):
 while True:
     name = not_blank("Enter your name (or 'xxx' to quit) ")
     if name == "xxx":
+        print("Hi)")
         break
 
 
